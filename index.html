@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage With Internal CSS</title>
+    <style>
+        body {
+    background-color: #f2f2f2;
+    }
+    form {
+    background-color: palevioletred;
+    border-radius: 40px;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px #888888;
+    }
+    input[type="text"], input[type="password"], input[type="email"] {
+    padding: 10px;
+    border-radius: 18px;
+    margin-bottom: 10px;
+    width: 90%;
+    }
+    input[type="submit"] {
+    background-color:lightgreen;
+    color:black;
+    padding: 10px;
+    
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <center>
+    <form method="POST">
+        <h2><u>Registration</u></h2>
+        <input type="text" id="username" placeholder="Enter Username" name="username" required><br><br>
+        <input type="email" id="email" placeholder="Enter Email" required><br><br>
+        <input type="password" id="password" placeholder="Enter Password" name="password" required><br><br>
+        <input type="password" id="confirm_password" placeholder="Confirm Password" name="cpassword" required><br><br>
+        <input type="submit" value="Register" name="Register"><br><br>
+        <b>Already have an account?</b><a href="index.html">Login</a>
+    </form>
+    </center>
+</body>
+</html>
